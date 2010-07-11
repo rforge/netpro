@@ -1,0 +1,12 @@
+Package: netresponse
+Type: Package
+Title: NetResponse: global modeling of condition-specific network responses
+Version: 0.3.2
+Date: 2010-06-13
+Author: Leo Lahti, Olli-Pekka Huovilainen and Antonio Gusmao
+Maintainer: Leo Lahti <leo.lahti@iki.fi>
+Description: Tools to detect condition-specific responses in interaction networks.
+License: GPL>=2
+Depends: methods, igraph, Rgraphviz
+LazyLoad: yes
+Packaged: 2010-05-28 11:25:42 UTC; lmlahti
