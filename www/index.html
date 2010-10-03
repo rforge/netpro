@@ -1,0 +1,262 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en   "> 
+ 
+  <head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<title> 
+	  NetResponse: functional network analysis
+	</title> 
+	<link href="http://r-forge.r-project.org/themes/rforge/styles/estilo1.css" rel="stylesheet" type="text/css" /> 
+  </head> 
+ 
+<body> 
+ 
+<style type="text/css"> 
+ 
+body{
+	text-align: center;
+	max-width:950px;
+	min-width:950px;
+	margin-left:auto;
+	margin-right:auto;
+}
+ 
+a img{
+	border:none;
+}
+ 
+div#wrapper{
+	text-align: left;
+}
+ 
+div.h2{
+	margin:19px 0px 19px 0px;
+	font-size:16pt;
+	font-weight:bold;
+	background-color:#135CAE;
+	color:white;
+	padding:10px;
+}
+ 
+div.h3{
+	margin:19px 0px 19px 0px;
+	font-size:12pt;
+	font-weight:bold;
+}
+ 
+h3, div.h3{
+	background-color:#dddddd;
+	padding:2px;
+}
+ 
+div#abstract{
+	font-size: 10pt;
+}
+ 
+div#support{
+	font-size: 10pt;
+}
+ 
+img{
+	vertical-align: middle;
+}
+ 
+.comment{
+	color: #770000;
+}
+ 
+div.menu th{
+	padding:8px;
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+}
+ 
+th.link{
+	padding:8px;
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+	border-left:1px dotted gray;
+	background-color:#dddddd;
+}
+div.menu th.link a{
+	color:#111199;
+}
+ 
+div.menu td{
+	border-bottom:1px solid gray;
+	border-left:1px solid gray;
+}
+ 
+div.menu th:first-child {
+	border-left:1px solid gray;
+	background-color:#dddddd;
+} 
+ 
+div.menu th.link:hover, div.menu th.link:hover a{
+	background-color:#135CAE;
+	color: white;
+}
+ 
+div.menu th.selected, div.menu th.selected a{
+	background-color:#ffffff;
+	color: black;
+	border-bottom:none;
+}
+ 
+.textbf{
+	font-weight: bold;
+}
+ 
+ 
+</style> 
+ 
+<div id="wrapper"> 
+<div class="h2">NetResponse: algorithms for model-based network analysis
+</div> 
+<table width="100%" cellpadding="0" cellspacing="0"> 
+<tr> 
+<td valign="top"> 
+Leo Lahti*&sup1;, Olli-Pekka Huovilainen, and Ant&oacute;nio Gusm&atilde;o
+<br /> 
+<small> 
+<p>(1) Department of Information and Computer Science, Aalto University, Finland<br/> 
+* Corresponding author; (<a href="http://www.iki.fi/Leo.Lahti">contact information</a>)</p> 
+</small> 
+
+<p></p><p></p> 
+
+The NetResponse algorithm provides model-based tools for functional
+network analysis, and a global map of network activation patterns.
+The method utilizes functional measurements of the network states
+across multiple conditions to detect functionally coherent local
+regions in the network. The algorithm also characterizes the
+condition-specific responses of such local subnetworks.
+
+<p>
+The R/BioC package contains also an implementation of variational
+Dirichlet process Gaussian mixture model (Kurihara et al., 2007).
+</p>
+
+
+
+
+<!--<p>
+Practical, open access implementations of general-purpose algorithms
+will help to realize the full potential of these information sources.
+</p>-->
+
+<p></p> Your feedback and contributions are welcome. 
+
+<!--See the <a target="_new"
+href="http://r-forge.r-project.org/projects/netpro">project page at
+R-Forge</a>-->
+
+See the <a target="_new"
+href="http://www.bioconductor.org/help/bioc-views/devel/bioc/html/netresponse.html">project page at BioConductor</a>, or contact <a href="http://www.iki.fi/Leo.Lahti">project
+admin</a>.
+
+</td> 
+<td>
+<img src="methodVertical7.jpg" width="170" alt="" />
+</td> 
+</tr></table> 
+ 
+
+<table width="100%"><tr> 
+<td valign="top" width="45%"> 
+<h3>Software &amp; Documentation</h3> 
+
+
+The applicability of the models has been demonstrated by case studies
+in computational biology (Lahti et al., 2010), where the model was
+used to investigate transcriptional activity in genome-scale pathway
+networks across normal human body.
+ 
+<ul>
+
+<li> <b>R/BioConductor</b>: For installation instructions, see
+the <a target="_new"
+href="http://www.bioconductor.org/help/bioc-views/devel/bioc/html/netresponse.html">project
+page at BioConductor</a>.  For further documentation, see
+the <a href="http://www.bioconductor.org/packages/2.7/bioc/vignettes/netresponse/inst/doc/netresponse.pdf">package
+vignette</a>.</li>
+<p></p>
+<li><b>Matlab:</b> <a href="http://www.cis.hut.fi/projects/mi/software/NetResponse/">Source
+code for Matlab</a> is also available.</li>
+
+</ul>
+
+<table><tr> 
+<td>
+
+</td> 
+
+</tr> 
+</table> 
+</td> 
+<td valign="top" width="45%"> 
+<h3>Background
+<font style="font-size:10pt;color:#990000"></font> 
+</h3> 
+<p>
+
+<p> 
+
+Techniques for model-based network analysis 
+are implemented in <a href="http://www.r-project.org">R</a>, an open
+source environment for statistical computing.
+<p></p> The implementations are based on probabilistic models and
+variational learning. The probabilistic framework deals rigorously
+with the uncertainties associated with small sample sizes, and allows
+incorporation of prior information in the analysis.
+ 
+</td> 
+</tr></table> 
+
+
+<!--<h3>Installation</h3>
+Each module has to be installed independently. For installation
+instructions and description of the modules, see the
+package <a href="../pkg/inst/doc/dmt.pdf">vignette</a>. Note
+that this is a development version.
+-->
+
+
+<h3>Licensing terms</h3>
+
+Licensed under an open source software license (GNU GPL >=2).
+
+<!--<h3>Acknowledgements</h3> 
+<div id="support"> 
+The project is a joint effort by several
+people: <a href="http://www.iki.fi/Leo.Lahti">Leo Lahti</a>, 
+Olli-Pekka Huovilainen, and Ant&oacute;nio Gusm&atilde;o.
+</div> 
+-->
+
+<h3>References</h3> 
+<div id="support"> </div>
+
+<ol>
+
+<li> Leo Lahti et al. (2010). <a href="http://bioinformatics.oxfordjournals.org/content/early/2010/09/02/bioinformatics.btq500.full.pdf?ijkey=N1zzjtUBRng3wCM&keytype=ref"><b>Global
+modeling of transcriptional responses in interaction
+networks</b></a>. <i>Bioinformatics</i>. (<a href="http://bioinformatics.oxfordjournals.org/content/early/2010/09/02/bioinformatics.btq500.abstract.html?ijkey=N1zzjtUBRng3wCM&keytype=ref">abstract</a>; <a href="http://bioinformatics.oxfordjournals.org/content/early/2010/09/02/bioinformatics.btq500.full.pdf?ijkey=N1zzjtUBRng3wCM&keytype=ref">advanced online-access (pdf)</a>; <a href="publications/Lahti10bioinf-preprint.pdf">preprint with supplementary figures (pdf)</a>
+<p></p>
+
+<li> Kenichi Kurihara et al. (2007). <b>Accelerated variational
+  Dirichlet process mixtures</b>. In B. Sch&ouml;lkopf, J. Platt, and
+  T. Hoffman, eds., <i>Advances in Neural Information Processing
+  Systems 19</i>, 761-768. MIT Press, Cambridge, MA.</li>
+
+</ol>
+
+
+
+
+
+</div> 
+</body> 
+</html> 
