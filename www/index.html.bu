@@ -112,9 +112,19 @@ div.menu th.selected, div.menu th.selected a{
  
 </style> 
  
-This site has moved in <a
-href="https://github.com/antagomir/netresponse">here</a>
+<div id="wrapper"> 
+<div class="h2">NetResponse: probabilistic algorithms for functional network analysis
+</div> 
+<table width="100%" cellpadding="0" cellspacing="0"> 
+<tr> 
+<td valign="top"> 
+Leo Lahti*, Olli-Pekka Huovilainen, Ant&oacute;nio Gusm&atilde;o and Juuso Parkkinen
+<br /> 
+<small> 
+(*) University of Helsinki, Finland; <a href="http://www.iki.fi/Leo.Lahti">corresponding author</a></p> 
+</small> 
 
+<p></p><p></p> 
 
 
 NetResponse provides probabilistic tools for functional analysis of
@@ -149,7 +159,7 @@ source, inst/doc/) for examples.
 Applicability of the models has been demonstrated by case studies in
 computational biology
 (<a href="http://bioinformatics.oxfordjournals.org/content/early/2010/09/02/bioinformatics.btq500.abstract.html?ijkey=N1zzjtUBRng3wCM&keytype=ref">Lahti
-et al., 2010</a>, <a href="http://www.biomedcentral.com/1752-0509/4/4">Parkkinen and Kaski, 2010</a>), where the algorithms
+et al., 2010</a>, Parkkinen and Kaski, 2010), where the algorithms
 have been used to investigate the structure and context-specific
 transcriptional activity of genome-scale interaction networks in human
 body.
@@ -208,12 +218,9 @@ networks</b></a>. <i>Bioinformatics</i>. (<a href="http://bioinformatics.oxfordj
   T. Hoffman, eds., <i>Advances in Neural Information Processing
   Systems 19</i>, 761-768. MIT Press, Cambridge, MA.</li>
 <p></p>
-
-<li> Juuso Parkkinen and Samuel Kaski. 
-<a href="http://www.biomedcentral.com/1752-0509/4/4"><b>Searching for functional gene modules with interaction component models.</b></a>
+<li> Juuso Parkkinen and Samuel Kaski. <b>Searching for functional 
+gene modules with interaction component models.</b> 
 <em>BMC Systems Biology</em> 2010, 4:4. 
-
-
 
 </ol>
 
